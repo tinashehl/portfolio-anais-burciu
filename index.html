@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Anaïs Burciu — Architecture Portfolio</title>
+  <meta name="description" content="Anaïs Burciu is an architect and urban designer based in Germany, working at the intersection of landscape, rehabilitation, and adaptive reuse.">
+  <meta name="author" content="Anaïs Burciu">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Anaïs Burciu — Architecture">
+  <meta property="og:description" content="Architecture and urban design portfolio — Reha-Zentrum Böllstein, Dondorfdruckerei, Paradieshofplatz.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/og-home.jpg">
+  <meta property="og:url" content="https://anaisburciu.github.io">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Anaïs Burciu — Architecture">
+  <meta name="twitter:image" content="assets/images/og-home.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div class="page-loader" role="status" aria-label="Loading">
+    <div class="loader-inner">
+      <span class="loader-monogram">AB</span>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor (hidden on touch) -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ─── NAVIGATION ─────────────────────────────────────── -->
+  <header role="banner">
+    <nav class="nav" role="navigation" aria-label="Primary navigation">
+      <a href="index.html" class="nav__logo" aria-label="Anaïs Burciu — Home">AB</a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="index.html"    class="nav__link">Home</a></li>
+        <li><a href="about.html"    class="nav__link">About</a></li>
+        <li><a href="projects.html" class="nav__link">Projects</a></li>
+        <li><a href="contact.html"  class="nav__link">Contact</a></li>
+      </ul>
+
+      <div class="nav__controls">
+        <button class="theme-toggle" aria-label="Switch to dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile navigation overlay -->
+    <div class="nav__mobile" id="mobile-nav" aria-hidden="true" role="dialog" aria-label="Mobile navigation">
+      <a href="index.html"    class="nav__mobile-link">Home</a>
+      <a href="about.html"    class="nav__mobile-link">About</a>
+      <a href="projects.html" class="nav__mobile-link">Projects</a>
+      <a href="contact.html"  class="nav__mobile-link">Contact</a>
+      <p class="nav__mobile-footer">Architecture &amp; Urban Design · Frankfurt</p>
+    </div>
+  </header>
+
+  <!-- ─── MAIN ───────────────────────────────────────────── -->
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero__bg hero__bg--placeholder" aria-hidden="true">
+        <img
+          src="assets/images/hero-home.jpg"
+          alt="Physical model of Neues Reha-Zentrum Böllstein embedded into hillside topography"
+          loading="eager"
+          fetchpriority="high"
+          onerror="this.style.display='none'"
+        >
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow">Architecture &amp; Urban Design · Frankfurt</p>
+        <span class="hero__name">Anaïs<br>Burciu</span>
+        <p class="hero__subtitle">Selected Works 2025</p>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-label">Scroll</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="section" aria-labelledby="featured-label">
+      <div class="container">
+        <div class="section-header">
+          <span class="label" id="featured-label">Selected Work — 2025</span>
+          <a href="projects.html" class="section-link" aria-label="View all projects">
+            All Projects
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12,5 19,12 12,19"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="projects-grid featured-grid">
+
+          <!-- 01 · Reha-Zentrum -->
+          <article class="project-card reveal" data-category="academic">
+            <a href="project-reha-zentrum.html" aria-label="View project: Neues Reha-Zentrum Böllstein">
+              <div class="project-card__img-wrap">
+                <div class="project-card__placeholder project-card__placeholder--reha" aria-hidden="true"></div>
+                <img
+                  data-src="assets/images/reha-zentrum-cover.jpg"
+                  alt="Physical model of the rehabilitation centre set into topographic terrain"
+                  width="1200" height="900"
+                  onerror="this.style.display='none'"
+                >
+                <div class="project-card__overlay" aria-hidden="true">
+                  <span class="overlay-cta">
+                    View Project
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="project-card__info">
+                <p class="project-card__number">01</p>
+                <h2 class="project-card__title">Neues Reha-Zentrum Böllstein</h2>
+                <div class="project-card__meta">
+                  <span>Academic · Projekt 05</span>
+                  <span>Brombachtal, Hessen</span>
+                  <span>WiSe 2025</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- 02 · Dondorfdruckerei -->
+          <article class="project-card reveal reveal-d2" data-category="professional">
+            <a href="project-dondorf.html" aria-label="View project: Dondorfdruckerei 2.OG">
+              <div class="project-card__img-wrap">
+                <div class="project-card__placeholder project-card__placeholder--dondorf" aria-hidden="true"></div>
+                <img
+                  data-src="assets/images/dondorf-cover.jpg"
+                  alt="Historic Dondorf printing factory facade in Bockenheim, Frankfurt"
+                  width="1200" height="900"
+                  onerror="this.style.display='none'"
+                >
+                <div class="project-card__overlay" aria-hidden="true">
+                  <span class="overlay-cta">
+                    View Project
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="project-card__info">
+                <p class="project-card__number">02</p>
+                <h2 class="project-card__title">Dondorfdruckerei 2.OG</h2>
+                <div class="project-card__meta">
+                  <span>Professional · ORT3 gUG</span>
+                  <span>Bockenheim, Frankfurt</span>
+                  <span>2025</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- 03 · Paradieshofplatz -->
+          <article class="project-card reveal reveal-d3" data-category="professional">
+            <a href="project-paradieshof.html" aria-label="View project: Leerstand Sachenhausen Paradieshofplatz">
+              <div class="project-card__img-wrap">
+                <div class="project-card__placeholder project-card__placeholder--paradieshof" aria-hidden="true"></div>
+                <img
+                  data-src="assets/images/paradieshof-cover.jpg"
+                  alt="Rendered perspective of the Paradieshof courtyard intervention"
+                  width="1200" height="900"
+                  onerror="this.style.display='none'"
+                >
+                <div class="project-card__overlay" aria-hidden="true">
+                  <span class="overlay-cta">
+                    View Project
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="project-card__info">
+                <p class="project-card__number">03</p>
+                <h2 class="project-card__title">Leerstand Sachenhausen</h2>
+                <div class="project-card__meta">
+                  <span>Professional · ORT3 gUG</span>
+                  <span>Paradieshofplatz, Frankfurt</span>
+                  <span>2025</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section class="statement" aria-label="Design philosophy">
+      <div class="container">
+        <div class="statement__inner reveal">
+          <span class="label statement__label">Philosophy</span>
+          <p class="statement__quote">
+            Architecture that emerges from its landscape,
+            <em>holds memory in its walls,</em>
+            and opens toward a community. Built with care —
+            in rammed earth, timber, and light.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ──────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__name">Anaïs Burciu</span>
+        <p class="footer__info">Architecture &amp; Urban Design · Frankfurt · 2025</p>
+        <nav class="footer__social" aria-label="Social links">
+          <a href="mailto:anais.burciu@example.com" aria-label="Email Anaïs Burciu">Email</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
